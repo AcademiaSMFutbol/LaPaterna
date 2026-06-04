@@ -46,13 +46,14 @@
       <div class="contrast__grid">
         <div class="contrast__card contrast__card--now">
           <div class="contrast__icon">⚠️</div>
-          <h3>Hoy</h3>
+          <h3>Hoy: abandono institucional</h3>
           <ul>
-            <li>Instalación cerrada y sin mantenimiento</li>
-            <li>Riesgo de deterioro irreversible</li>
-            <li>Espacio sin uso en el corazón del barrio</li>
-            <li>Jóvenes sin alternativas cercanas</li>
-            <li>Mayores sin espacios de actividad</li>
+            <li>Sin limpieza ni mantenimiento visible</li>
+            <li>Redes de portería rotas o inexistentes</li>
+            <li>Red perimetral de balones sin función</li>
+            <li>Maleza acumulada en bordes y terreno</li>
+            <li>Puntos de luz sin revisar ni mantener</li>
+            <li>Un barrio sin alternativas deportivas cerca</li>
           </ul>
         </div>
         <div class="contrast__arrow">→</div>
@@ -107,8 +108,8 @@
         <div class="promoter__text">
           <span class="promoter__tag">Quién hay detrás</span>
           <h2>Antonio Samuel Martín Rivera</h2>
-          <p class="promoter__role">Técnico Deportivo · Vecino de La Paterna</p>
-          <p>Con formación acreditada en gestión deportiva y años de trabajo en el barrio, Antonio Samuel impulsa este proyecto desde el conocimiento técnico y el compromiso personal con La Paterna.</p>
+          <p class="promoter__role">Técnico Deportivo</p>
+          <p>Con formación acreditada en gestión deportiva y años de vinculación con el barrio, Antonio Samuel impulsa este proyecto desde el conocimiento técnico y el compromiso personal con La Paterna.</p>
           <p>Este no es un proyecto político ni ideológico. Es un proyecto de barrio: concreto, viable y con un equipo preparado para gestionarlo desde el primer día.</p>
           <ul class="promoter__credentials">
             <li>✓ Técnico Deportivo certificado</li>
@@ -136,60 +137,48 @@
         <p class="section-sub">Cada vecino y vecina que apoya envía un mensaje claro a la administración: <strong>este espacio es necesario y hay quien puede gestionarlo.</strong></p>
       </div>
       <div class="support__form-wrap">
+        <p class="form-note">Al pulsar el botón se abrirá tu aplicación de correo con los datos ya rellenados. Solo tienes que darle a enviar.</p>
         <form
           id="support-form"
-          action="https://formspree.io/asmarriv1986@gmail.com"
+          action="mailto:asmarriv1986@gmail.com"
           method="POST"
-          novalidate
+          enctype="text/plain"
         >
           <div class="form-row">
             <div class="form-group">
               <label for="nombre">Nombre completo *</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+              <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" required autocomplete="name" />
             </div>
             <div class="form-group">
-              <label for="email">Correo electrónico *</label>
-              <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+              <label for="email">Tu correo electrónico *</label>
+              <input type="email" id="email" name="Correo" placeholder="tu@email.com" required autocomplete="email" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="barrio">Barrio o municipio</label>
-              <input type="text" id="barrio" name="barrio" placeholder="La Paterna, Las Palmas..." autocomplete="address-level2" />
+              <input type="text" id="barrio" name="Barrio" placeholder="La Paterna, Las Palmas..." autocomplete="address-level2" />
             </div>
             <div class="form-group">
               <label for="tipo">¿Cómo quieres participar?</label>
-              <select id="tipo" name="tipo">
-                <option value="">Solo quiero apoyar</option>
-                <option value="voluntario">Como voluntario/a</option>
-                <option value="usuario">Como usuario/a de las instalaciones</option>
-                <option value="entidad">Representando una entidad o asociación</option>
-                <option value="profesional">Como profesional del deporte o la salud</option>
+              <select id="tipo" name="Participacion">
+                <option value="Solo quiero apoyar">Solo quiero apoyar</option>
+                <option value="Voluntario/a">Como voluntario/a</option>
+                <option value="Usuario/a">Como usuario/a de las instalaciones</option>
+                <option value="Entidad o asociacion">Representando una entidad o asociación</option>
+                <option value="Profesional del deporte o salud">Como profesional del deporte o la salud</option>
               </select>
             </div>
           </div>
           <div class="form-group form-group--full">
             <label for="propuesta">¿Tienes alguna propuesta o mensaje? (opcional)</label>
-            <textarea id="propuesta" name="propuesta" rows="3" placeholder="Cuéntanos qué actividades te gustaría ver, qué necesidades tiene el barrio..."></textarea>
-          </div>
-          <div class="form-group form-group--full form-check">
-            <label class="checkbox-label">
-              <input type="checkbox" id="privacidad" name="privacidad" required />
-              <span>Acepto que mis datos se usen para gestionar mi apoyo al proyecto y comunicarme novedades. No se cederán a terceros. <a href="#privacidad-info">Más información.</a></span>
-            </label>
+            <textarea id="propuesta" name="Propuesta" rows="3" placeholder="Cuéntanos qué actividades te gustaría ver, qué necesidades tiene el barrio..."></textarea>
           </div>
           <div class="form-group form-group--full">
-            <button type="submit" class="btn btn--primary btn--lg btn--full" id="submit-btn">
-              <span id="btn-text">Firmar mi apoyo</span>
-              <span id="btn-loading" hidden>Enviando...</span>
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              Firmar mi apoyo
             </button>
           </div>
-          <p id="form-success" class="form-message form-message--success" hidden>
-            ¡Gracias! Tu apoyo ha sido registrado. Te mantendremos informado/a de los avances del proyecto.
-          </p>
-          <p id="form-error" class="form-message form-message--error" hidden>
-            Hubo un problema al enviar. Por favor, inténtalo de nuevo o escríbenos directamente.
-          </p>
         </form>
       </div>
     </div>
